@@ -1,30 +1,21 @@
+#
 # Netscape HTTP Cookie File
 # https://curl.haxx.se/rfc/cookie_spec.html
 # This is a generated file! Do not edit.
 
-.google.com	TRUE	/verify	TRUE	1779478751	SNID	AICKk4xJx8Y0klkAAqgT52i1mRqhUNr4gLz4SEAri_ntebranYWpvCCgE42YxDDzB8x9vTS4gOHcIeXDMOMEdXqe3a0hAJeh6g
-www.wikipedia.org	FALSE	/	TRUE	1766458619	WMF-Last-Access	20-Nov-2025
-.wikipedia.org	TRUE	/	TRUE	1766458619	WMF-Last-Access-Global	20-Nov-2025
-www.wikipedia.org	FALSE	/	TRUE	1763671145	NetworkProbeLimit	0.001
-.wikipedia.org	TRUE	/	TRUE	1795186619	WMF-Uniq	aUnaDcyxlHi930Qdcrg7ZwKxAAAAAFvdUfAh2RaOoqOzfTIzwte7gqvxZASAC6-2
-.google.com	TRUE	/	TRUE	1779219551	AEC	AaJma5vXo2kWjqZA0aUZED4im3lGN8dnd9pdMF656HM3V3imlzDhD0jlsIo
-.google.com	TRUE	/	TRUE	1779478750	NID	526=nJhNPJETg55zi_w1Eqr0PYy_Ymrf1n5TXvd7mmxKaNfk4J2NDEeLP7C69YlCwpTjv44fv1fOtbw5jrPSYZgy_qx4CFJ9zfmYo8eKqBnszdTIUmblrRlBgleI26OJpY5nSMw4LMRJQs37MDbkVvFQ3Q8TME2mtn6R9hIQE7B_S37uVjw1CnLP5UbbWzF27k2jazCayrJnV7dQzTzjXlArib2e3NemAyIdoJMD1oSDRdu4CTh3rKdjEYaZLsTKT-gpudOK-RV5I9qstb4OHX8
-.mozilla.org	TRUE	/	FALSE	1798228743	_ga_B9CY1C9VBC	GS2.1.s1763667580$o1$g1$t1763668743$j57$l0$h0
-.mozilla.org	TRUE	/	FALSE	1798228740	_ga	GA1.1.391220608.1763667581
-.mozilla.org	TRUE	/	FALSE	1763755140	_gid	GA1.2.1251862734.1763667581
 .youtube.com	TRUE	/	TRUE	1779219675	__Secure-YNID	13.YT=AOg1LxZ8gfIPiYaKxCluSHZtq-xKEp-sSd-gcvRxfJi_MjFH4u_3U7R4g0VcjJtUiDIGzPRgMuakTdvb2uTjKAsa2n-m_Tx1e3AssPpxXuDpBvtfs9eYkl4FrHsEckUXz8qwX9kI2nfUY4a1zpYiGCcUHF_Ic8DEymRuC6K-A2GsfXFF1FIzE_eiof61Zak9KXXZ4cWro-jmHTk30G7T5xaAf1vGIBNc0Zl04Q_QLzCFsqPOy2p_Lso05V73DO2JQCorcPuJP-Ui1Ih12OGGMXwcgwUFltx3VRu38nnL2pMbgYjtyqE1L8o2xmMMY5CpIqG-4RW1_FpGQFSvbnfSBA
 .youtube.com	TRUE	/	TRUE	1763669476	GPS	1
-.youtube.com	TRUE	/	TRUE	1779220787	VISITOR_INFO1_LIVE	4lunnOHIYbM
-.youtube.com	TRUE	/	TRUE	1779220787	VISITOR_PRIVACY_METADATA	CgJJThIEGgAgbg%3D%3D
-.youtube.com	TRUE	/	TRUE	1798228804	PREF	f6=40000000&tz=Asia.Kolkata&f7=100&suppress_app_upsell=1&f4=4000000
+.youtube.com	TRUE	/	TRUE	1779220958	VISITOR_INFO1_LIVE	4lunnOHIYbM
+.youtube.com	TRUE	/	TRUE	1779220958	VISITOR_PRIVACY_METADATA	CgJJThIEGgAgbg%3D%3D
+.youtube.com	TRUE	/	TRUE	1798228982	PREF	f6=40000000&tz=Asia.Kolkata&f7=100&suppress_app_upsell=1&f4=4000000
 .youtube.com	TRUE	/	FALSE	1763667717	ST-1tolfbd	csn=QG4SFMb7Q4HoQRDw&itct=CEwQ_FoYACITCKzuupm-gZEDFS94nQkdQWg5zTIGc2VhcmNoUgRpc2hxmgEDEPQkygEEzS0yWg%3D%3D
 .youtube.com	TRUE	/	FALSE	1763667729	ST-1rayxzj	csn=pY53Nh5TneqL0KxG&itct=CIwBEPxaGAEiEwjH6JebvoGRAxUvQp0JHebHGQoyB3JlbGF0ZWRI14WqkMXd4b2EAZoBBQgBEPgdygEEzS0yWg%3D%3D
 .youtube.com	TRUE	/	FALSE	1763667735	ST-90ptdt	csn=pY53Nh5TneqL0KxG&itct=CI4BEPxaGAAiEwjH6JebvoGRAxUvQp0JHebHGQoyB3JlbGF0ZWRI14WqkMXd4b2EAZoBBQgBEPgdygEEzS0yWg%3D%3D
 .youtube.com	TRUE	/	FALSE	1763667802	ST-t440o8	
-www.google.com	FALSE	/	FALSE	1763669287	DV	Q4w4SIN7MGAdEKMYZTqdNnGKjIItqhk
 .youtube.com	TRUE	/	FALSE	1763668680	ST-cvirrj	csn=NBNWDq8KTx4G23MO&itct=CEoQ_FoiEwiAwr_kwYGRAxUqtUsFHQZNGZ4yCmctaGlnaC1yZWNaD0ZFd2hhdF90b193YXRjaJoBBhCOHhieAcoBBM0tMlo%3D
 .youtube.com	TRUE	/	FALSE	1763668698	ST-3vflv3	csn=jUdmNY3R8UlXv8oE&itct=CEoQ_FoiEwjD8-3twYGRAxUTT-sIHcN2HzAyCmctaGlnaC1yZWNaD0ZFd2hhdF90b193YXRjaJoBBhCOHhieAcoBBM0tMlo%3D
-.youtube.com	TRUE	/	TRUE	0	YSC	dRUkyac0h8Y
-.mozilla.org	TRUE	/	FALSE	1763668800	_gat	1
 .youtube.com	TRUE	/	FALSE	1763668782	ST-1ie6573	csn=biBE2zEgPirZexOj&itct=CEYQ_FoiEwjbwLiMwoGRAxV284sBHYCuPToyCmctaGlnaC1yZWNaD0ZFd2hhdF90b193YXRjaJoBBhCOHhieAcoBBM0tMlo%3D
 .youtube.com	TRUE	/	FALSE	1763668808	ST-f6xrjq	itct=CPUBENwwIhMIkbeBmcKBkQMVrco0Bx39UQrHMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngHKAQTNLTJa&csn=FiB0D7XQ7fyb41C6&endpoint=%7B%22clickTrackingParams%22%3A%22CPUBENwwIhMIkbeBmcKBkQMVrco0Bx39UQrHMgpnLWhpZ2gtcmVjWg9GRXdoYXRfdG9fd2F0Y2iaAQYQjh4YngHKAQTNLTJa%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DXGRk_FTuJ5w%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22XGRk_FTuJ5w%22%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr2---sn-ci5gup-pmgl.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26msp%3D1%26odepv%3D1%26id%3D5c6464fc54ee279c%26ip%3D2401%253A4900%253A8834%253Af862%253A32e4%253A6579%253A3f11%253Add2b%26initcwndbps%3D1352500%26mt%3D1763668426%26oweuc%3D%22%7D%7D%7D%7D%7D
+.youtube.com	TRUE	/	FALSE	1763668815	ST-cvbc8k	itct=CNQBENTEDBgJIhMI9c6ipMKBkQMV4EydCR2SqD2XMgdyZWxhdGVkSJzPuKfFn5myXJoBBQgBEPgdygEEzS0yWg%3D%3D&csn=7VdhNGOaBkrcHin5&endpoint=%7B%22clickTrackingParams%22%3A%22CNQBENTEDBgJIhMI9c6ipMKBkQMV4EydCR2SqD2XMgdyZWxhdGVkSJzPuKfFn5myXJoBBQgBEPgdygEEzS0yWg%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3DLeKYqA-ProQ%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%22LeKYqA-ProQ%22%2C%22nofollow%22%3Atrue%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr2---sn-ci5gup-pmgl.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26msp%3D1%26odepv%3D1%26id%3D2de298a80f8fae84%26ip%3D2401%253A4900%253A8834%253Af862%253A32e4%253A6579%253A3f11%253Add2b%26initcwndbps%3D1352500%26mt%3D1763668426%26oweuc%3D%22%7D%7D%7D%7D%7D
+.youtube.com	TRUE	/	TRUE	0	YSC	F7BHGXnN_4g
+.youtube.com	TRUE	/	FALSE	1763668985	ST-13qqxje	itct=CJ8BENTEDBgLIhMI-Iev7sKBkQMVkYdmAh0bYAB_MgdyZWxhdGVkSITdvvyAlabxLZoBBQgBEPgdygEEzS0yWg%3D%3D&csn=x-rQRDSnXrNpUKuM&endpoint=%7B%22clickTrackingParams%22%3A%22CJ8BENTEDBgLIhMI-Iev7sKBkQMVkYdmAh0bYAB_MgdyZWxhdGVkSITdvvyAlabxLZoBBQgBEPgdygEEzS0yWg%3D%3D%22%2C%22commandMetadata%22%3A%7B%22webCommandMetadata%22%3A%7B%22url%22%3A%22%2Fwatch%3Fv%3D5AKXVO-PeX8%22%2C%22webPageType%22%3A%22WEB_PAGE_TYPE_WATCH%22%2C%22rootVe%22%3A3832%7D%7D%2C%22watchEndpoint%22%3A%7B%22videoId%22%3A%225AKXVO-PeX8%22%2C%22nofollow%22%3Atrue%2C%22watchEndpointSupportedOnesieConfig%22%3A%7B%22html5PlaybackOnesieConfig%22%3A%7B%22commonConfig%22%3A%7B%22url%22%3A%22https%3A%2F%2Frr2---sn-ci5gup-pmgl.googlevideo.com%2Finitplayback%3Fsource%3Dyoutube%26oeis%3D1%26c%3DWEB%26oad%3D3200%26ovd%3D3200%26oaad%3D11000%26oavd%3D11000%26ocs%3D700%26oewis%3D1%26oputc%3D1%26ofpcc%3D1%26msp%3D1%26odepv%3D1%26id%3De4029754ef8f797f%26ip%3D2401%253A4900%253A8834%253Af862%253A32e4%253A6579%253A3f11%253Add2b%26initcwndbps%3D1352500%26mt%3D1763668426%26oweuc%3D%22%7D%7D%7D%7D%7D
