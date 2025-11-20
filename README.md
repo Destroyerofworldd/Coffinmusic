@@ -17,7 +17,7 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Destroyerofworldd&repo=FadedXMusic&theme=flag-india)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Destroyerofworldd&repo=Coffinmusic&theme=flag-india)
 
 [![GIF](https://github.com/Destroyerofworldd/coffinmusic/blob/main/Destroyerofworldd.gif)](https://github.com/coffinmusic)
    [![ALPHA](https://github-stats-alpha.vercel.app/api?username=Destroyerofworldd "DESTROYER")](https://github-stats-alpha.vercel.app/api?username=Destroyerofworldd "DESTROYER")
