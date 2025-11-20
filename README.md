@@ -1,81 +1,42 @@
-# 🎵 AloneMusic
+ # ⚡𝐂𝐎𝐅𝐅𝐈𝐍 𝐌𝐔𝐒𝐈𝐂⚰
+➥ 𝖧ᴇʀᴏᴋᴜ 𝖭ᴇᴡ 𝖤ʀʀᴏʀ 𝖥ɪ𝐱ᴇᴅ ✔️ 
+ ➥ 𝖥ɪʀsᴛ 𝖥ᴏʀᴋ 𝖳ʜɪs 𝖱ᴇʀᴏ 𝖠ɴᴅ 𝖦ɪᴠᴇ ᴀ 𝖲ᴛᴀʀ ⭐
+  ➥ 𝖳ʜᴇɴ ʜᴏsᴛ ᴏɴ ʜᴇʀᴋᴏᴜ 👨🏻‍💻
+<h1 align="center"
+ 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Stars](https://img.shields.io/github/stars/TheAloneTeam/AloneMusic?style=social)](https://github.com/TheAloneTeam/AloneMusic/stargazers)
-[![Forks](https://img.shields.io/github/forks/TheAloneTeam/AloneMusic?style=social)](https://github.com/TheAloneTeam/AloneMusic/network/members)
+### 𝙁𝘼𝘿𝙀𝘿 𝙊𝙋 ⚡
+<h1 align="center"   
+ <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=🍁+🚩+𝗣𝗢𝗪𝗘𝗥𝗘𝗗+𝗕𝗬+𝗙𝗔𝗗𝗘𝗗+🚩+🍁"></b></h3>
+ <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
----
+<h1 align="center"><b> Cᴏғғɪɴ Mᴜsɪᴄ Bᴏᴛ</b></h1>
+<p align="center"><a href="https://t.me/Coffin_Ka_Bhai_Faded"><img src="https://files.catbox.moe/gaompc.jpg" width="400"></a></p>
 
-
-## 🚀 Introduction
-**AloneMusic** is a Python-based **music bot/service** that allows users to play, pause, skip, and manage playlists with ease.  
-It’s designed to be lightweight, fast, and customizable.  
-
----
-
-## ✨ Features
-- 🎶 Play / Pause / Skip / Stop songs  
-- 📂 Playlist management (add/remove/list)  
-- 🔗 Play via song name or URL  
-- ⚡ Fast and smooth performance  
-- ⚙️ Easy configuration with `.env` file  
-- 🐳 Docker & Heroku deployment support  
-
----
-## ❤️ Support
-
-💬 **Telegram:** [AloneMusic](https://t.me/TheTeamHacker)  
-📂 **GitHub Issues:** [Report a Problem](https://github.com/TheAloneTeam/AloneMusic/issues/new)
-
----
-
-## 📜 License
-
-🧾 This project is licensed under the **GNU GPLv3 License** — see the [LICENSE](/LICENSE) file for details.
-
----
-
-## 🚀 Deployment Methods
-
-### 🔹 1. Deploy on **Heroku** (One Click)
-Click this button to deploy instantly on **Heroku**:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheAloneTeam/AloneMusic)
-
-Or deploy manually:
-```bash
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-# 1. Update system
-sudo apt update && sudo apt upgrade -y
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Destroyerofworldd&repo=FadedXMusic&theme=flag-india)
 
-# 2. Install system dependencies
-sudo apt install python3 python3-pip git ffmpeg screen -y
+[![GIF](https://github.com/Destroyerofworldd/coffinmusic/blob/main/Destroyerofworldd.gif)](https://github.com/coffinmusic)
+   [![ALPHA](https://github-stats-alpha.vercel.app/api?username=Destroyerofworldd "DESTROYER")](https://github-stats-alpha.vercel.app/api?username=Destroyerofworldd "DESTROYER")
 
-# 3. Clone the repository
-git clone https://github.com/TheAloneTeam/AloneMusic.git
-cd AloneMusic
 
-# 4. Install build backend (in case it's missing)
-pip install build setuptools wheel
+GO TO [RELOAD.PY](https://github.com/Destroyerofworldd/coffinmusic/blob/main/coffinMusic/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
-# 5. Install project dependencies using pyproject.toml
-# (This automatically reads dependencies from pyproject.toml)
-pip install .
+</p>
+. 
+<p align="center">
+<b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
+</p>
 
-# 6. Setup environment variables
-cp sample.env .env
-nano .env    # Fill BOT_TOKEN, API_ID, API_HASH, etc.
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
-# 7. (Optional) Run bot in a screen session so it keeps running
-screen -S alone
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Destroyerofworldd/coffinmusic"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-# 8. Run the bot
-python3 -m AloneMusic.bot
 
-# 9. To detach from screen safely:
-# Ctrl + A + D
+<p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=TEAMPURVI&show_icons=true&locale=en&layout=compact" alt="ʀᴀᴊᴀ ʙᴀʙᴜ" /></p>
 
-# 10. To reattach:
-# screen -r alone
