@@ -82,7 +82,7 @@ async def play_commnd(
     emoji = random.choice(EMOJII)
 
     sticker_msg = await message.reply_sticker(
-        "CAACAgUAAyEFAAS8mh_2AAJSS2kfe-WRtnV4vB0DheX8c32Z2NZgAAKMCAACHbSBVfuKp6_qUip9HgQ"
+        "CAACAgUAAyEFAASorrfoAALFJ2kfigtAbeJqDGZwMR-k1IyprTYQAAJXFwACtZLwVwnf9zaCLmJ8HgQ"
 
     ) 
 
