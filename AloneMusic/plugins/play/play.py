@@ -83,8 +83,9 @@ async def play_commnd(
     emoji = random.choice(EMOJII)
 
     sticker_msg = await message.reply_sticker(
-        "CAACAgIAAyEFAASorrfoAALE9GkfYDyXVIgGUZ31qweLEbOkLBK6AALDgQACXdewS4ybuy5sxxdCHgQ"
-    )
+        "CAACAgUAAyEFAAS8mh_2AAJSS2kfe-WRtnV4vB0DheX8c32Z2NZgAAKMCAACHbSBVfuKp6_qUip9HgQ"
+
+    ) 
 
     asyncio.create_task(delete_after_delay(sticker_msg))
 
