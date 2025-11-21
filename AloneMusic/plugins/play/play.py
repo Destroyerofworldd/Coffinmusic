@@ -34,12 +34,21 @@ from config import BANNED_USERS, lyrical
 
 EMOJII = [
     "🔥",
-    "💋", 
+    "💋",
+    "🥺",
+    "😒",
     "💖",
     "💘",
     "💕",
-    "✨", 
+    "✨",
+    "🧪",
     "🥰",
+    "🚩",
+    "🫦",
+    "💔",
+    "🦠",
+    "😓",
+    "🫧",
 ]
 
 
@@ -82,9 +91,8 @@ async def play_commnd(
     emoji = random.choice(EMOJII)
 
     sticker_msg = await message.reply_sticker(
-        "CAACAgUAAyEFAASorrfoAALFJ2kfigtAbeJqDGZwMR-k1IyprTYQAAJXFwACtZLwVwnf9zaCLmJ8HgQ"
-
-    ) 
+        "CAACAgUAAyEFAASOlzVAAAEBbMVoZBvc22oR8X-QlMPpERj8bdrDtgAChAsAAjXBOFddqD7hjDYLoh4E"
+    )
 
     asyncio.create_task(delete_after_delay(sticker_msg))
 
