@@ -35,9 +35,9 @@ LOGGER_ID = int(getenv("LOGGER_ID", None))
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 7755325478))
 
-API_URL = getenv("API_URL", "https://api.thequickearn.xyz")
-VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.thequickearn.xyz")
-API_KEY = getenv("API_KEY", "NxGBNexGenBots66dc83")     # optional
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz')
+VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
+API_KEY = getenv("API_KEY", '30DxNexGenBotsfcfad8')     # optional
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 
