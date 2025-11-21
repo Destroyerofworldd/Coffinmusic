@@ -16,9 +16,8 @@ import logging
 import aiohttp
 from AloneMusic import LOGGER
 from urllib.parse import urlparse
-from config import API_URL, VIDEO_API_URL, API_KEY
 
-YOUR_API_URL = "http://46.250.243.52:1470"
+YOUR_API_URL = None
 
 def cookie_txt_file():
     cookie_dir = "AloneMusic/cookies"
@@ -32,8 +31,8 @@ def cookie_txt_file():
 
 async def load_api_url():
     global YOUR_API_URL
-    logger = LOGGER("XMUSIC/platforms/Youtube.py")
-
+    logger = LOGGER("AloneMusic/platforms/Youtube.py")
+    
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get("https://pastebin.com/raw/rLsBhAQa") as response:
@@ -59,65 +58,65 @@ async def get_telegram_file(telegram_link: str, video_id: str, file_type: str) -
     """
     TG link to source
     """
-    logger = LOGGER("XMUSIC/platforms/Youtube.py")
+    logger = LOGGER("AloneMusic/platforms/Youtube.py")
     try:
         extension = ".webm" if file_type == "audio" else ".mkv"
         file_path = os.path.join("downloads", f"{video_id}{extension}")
-
+        
         # Agar already exist kare to seedha return
         if os.path.exists(file_path):
-            logger.info(f"📂 [LOCAL] File exists: {video_id}")
+            logger.info(f"ðŸ“‚ [LOCAL] File exists: {video_id}")
             return file_path
-
+        
         # Parse Telegram link: https://t.me/channelname/messageid
         parsed = urlparse(telegram_link)
         parts = parsed.path.strip("/").split("/")
-
+        
         if len(parts) < 2:
-            logger.error(f"❌ Invalid Telegram link format: {telegram_link}")
+            logger.error(f"âŒ Invalid Telegram link format: {telegram_link}")
             return None
-
+            
         channel_name = parts[0]
         message_id = int(parts[1])
-
-        logger.info(f"📥 [TELEGRAM] Downloading from @{channel_name}/{message_id}")
-
+        
+        logger.info(f"ðŸ“¥ [TELEGRAM] Downloading from @{channel_name}/{message_id}")
+        
         # Pyrogram se message fetch karke download
         msg = await app.get_messages(channel_name, message_id)
-
+        
         os.makedirs("downloads", exist_ok=True)
         await msg.download(file_name=file_path)
-
+        
         # Wait karo jab tak file fully download na ho
         timeout = 0
         while not os.path.exists(file_path) and timeout < 60:
             await asyncio.sleep(0.5)
             timeout += 0.5
-
+        
         if os.path.exists(file_path):
-            logger.info(f"✅ [TELEGRAM] Downloaded: {video_id}")
+            logger.info(f"âœ… [TELEGRAM] Downloaded: {video_id}")
             return file_path
         else:
-            logger.error(f"❌ [TELEGRAM] Timeout: {video_id}")
+            logger.error(f"âŒ [TELEGRAM] Timeout: {video_id}")
             return None
-
+        
     except Exception as e:
-        logger.error(f"❌ [TELEGRAM] Failed to download {video_id}: {e}")
+        logger.error(f"âŒ [TELEGRAM] Failed to download {video_id}: {e}")
         return None
 
 async def download_song(link: str) -> str:
     global YOUR_API_URL
-
+    
     if not YOUR_API_URL:
         await load_api_url()
         if not YOUR_API_URL:
-            logger = LOGGER("XMUSIC/platforms/Youtube.py")
+            logger = LOGGER("AloneMusic/platforms/Youtube.py")
             logger.error("API URL not available")
             return None
-
+    
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
-    logger = LOGGER("XMUSIC/platforms/Youtube.py")
-    logger.info(f"🎵 [AUDIO] Starting download for: {video_id}")
+    logger = LOGGER("AloneMusic/platforms/Youtube.py")
+    logger.info(f"ðŸŽµ [AUDIO] Starting download for: {video_id}")
 
     if not video_id or len(video_id) < 3:
         return None
@@ -128,13 +127,13 @@ async def download_song(link: str) -> str:
 
     # Local check
     if os.path.exists(file_path):
-        logger.info(f"🎵 [LOCAL] File exists: {video_id}")
+        logger.info(f"ðŸŽµ [LOCAL] File exists: {video_id}")
         return file_path
 
     try:
         async with aiohttp.ClientSession() as session:
             params = {"url": video_id, "type": "audio"}
-
+            
             async with session.get(
                 f"{YOUR_API_URL}/download",
                 params=params,
@@ -149,21 +148,21 @@ async def download_song(link: str) -> str:
                 # Format 1: Direct Telegram link (already uploaded)
                 if data.get("link") and "t.me" in str(data.get("link")):
                     telegram_link = data["link"]
-                    logger.info(f"🔗 [AUDIO] Telegram link received: {telegram_link}")
-
+                    logger.info(f"ðŸ”— [AUDIO] Telegram link received: {telegram_link}")
+                    
                     # Telegram se download karo
                     downloaded_file = await get_telegram_file(telegram_link, video_id, "audio")
                     if downloaded_file:
                         return downloaded_file
                     else:
-                        logger.warning(f"⚠️ [AUDIO] Telegram download failed")
+                        logger.warning(f"âš ï¸ [AUDIO] Telegram download failed")
                         return None
-
+                
                 # Format 2: Stream URL (not yet uploaded)
                 elif data.get("status") == "success" and data.get("stream_url"):
                     stream_url = data["stream_url"]
                     logger.info(f"[AUDIO] Stream URL obtained: {video_id}")
-
+                    
                     # Download from stream URL
                     async with session.get(
                         stream_url,
@@ -172,12 +171,12 @@ async def download_song(link: str) -> str:
                         if file_response.status != 200:
                             logger.error(f"[AUDIO] Download failed: {file_response.status}")
                             return None
-
+                            
                         with open(file_path, "wb") as f:
                             async for chunk in file_response.content.iter_chunked(16384):
                                 f.write(chunk)
-
-                        logger.info(f"🎉 [AUDIO] Downloaded: {video_id}")
+                        
+                        logger.info(f"ðŸŽ‰ [AUDIO] Downloaded: {video_id}")
                         return file_path
                 else:
                     logger.error(f"[AUDIO] Invalid response: {data}")
@@ -193,17 +192,17 @@ async def download_song(link: str) -> str:
 
 async def download_video(link: str) -> str:
     global YOUR_API_URL
-
+    
     if not YOUR_API_URL:
         await load_api_url()
         if not YOUR_API_URL:
-            logger = LOGGER("XMUSIC/platforms/Youtube.py")
+            logger = LOGGER("AloneMusic/platforms/Youtube.py")
             logger.error("API URL not available")
             return None
-
+    
     video_id = link.split('v=')[-1].split('&')[0] if 'v=' in link else link
-    logger = LOGGER("XMUSIC/platforms/Youtube.py")
-    logger.info(f"🎥 [VIDEO] Starting download for: {video_id}")
+    logger = LOGGER("AloneMusic/platforms/Youtube.py")
+    logger.info(f"ðŸŽ¥ [VIDEO] Starting download for: {video_id}")
 
     if not video_id or len(video_id) < 3:
         return None
@@ -214,13 +213,13 @@ async def download_video(link: str) -> str:
 
     # Local check
     if os.path.exists(file_path):
-        logger.info(f"🎥 [LOCAL] File exists: {video_id}")
+        logger.info(f"ðŸŽ¥ [LOCAL] File exists: {video_id}")
         return file_path
 
     try:
         async with aiohttp.ClientSession() as session:
             params = {"url": video_id, "type": "video"}
-
+            
             async with session.get(
                 f"{YOUR_API_URL}/download",
                 params=params,
@@ -235,21 +234,21 @@ async def download_video(link: str) -> str:
                 # Format 1: Direct Telegram link (already uploaded)
                 if data.get("link") and "t.me" in str(data.get("link")):
                     telegram_link = data["link"]
-                    logger.info(f"🔗 [VIDEO] Telegram link received: {telegram_link}")
-
+                    logger.info(f"ðŸ”— [VIDEO] Telegram link received: {telegram_link}")
+                    
                     # Telegram se download karo
                     downloaded_file = await get_telegram_file(telegram_link, video_id, "video")
                     if downloaded_file:
                         return downloaded_file
                     else:
-                        logger.warning(f"⚠️ [VIDEO] Telegram download failed")
+                        logger.warning(f"âš ï¸ [VIDEO] Telegram download failed")
                         return None
-
+                
                 # Format 2: Stream URL (not yet uploaded)
                 elif data.get("status") == "success" and data.get("stream_url"):
                     stream_url = data["stream_url"]
                     logger.info(f"[VIDEO] Stream URL obtained: {video_id}")
-
+                    
                     # Download from stream URL
                     async with session.get(
                         stream_url,
@@ -258,12 +257,12 @@ async def download_video(link: str) -> str:
                         if file_response.status != 200:
                             logger.error(f"[VIDEO] Download failed: {file_response.status}")
                             return None
-
+                            
                         with open(file_path, "wb") as f:
                             async for chunk in file_response.content.iter_chunked(16384):
                                 f.write(chunk)
-
-                        logger.info(f"🎉 [VIDEO] Downloaded: {video_id}")
+                        
+                        logger.info(f"ðŸŽ‰ [VIDEO] Downloaded: {video_id}")
                         return file_path
                 else:
                     logger.error(f"[VIDEO] Invalid response: {data}")
@@ -282,7 +281,7 @@ async def check_file_size(link):
         if not cookie_file:
             print("No cookies found. Cannot check file size.")
             return None
-
+            
         proc = await asyncio.create_subprocess_exec(
             "yt-dlp",
             "--cookies", cookie_file,
@@ -307,12 +306,12 @@ async def check_file_size(link):
     info = await get_format_info(link)
     if info is None:
         return None
-
+    
     formats = info.get('formats', [])
     if not formats:
         print("No formats found.")
         return None
-
+    
     total_size = parse_size(formats)
     return total_size
 
@@ -531,4 +530,6 @@ class YouTubeAPI:
                     return None, False
         except Exception as e:
             print(f"Download failed: {e}")
-            return None, False
+            return None, False                                
+                                
+                                
