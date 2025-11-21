@@ -22,6 +22,8 @@
 [![GIF](https://github.com/Destroyerofworldd/coffinmusic/blob/main/Destroyerofworldd.gif)](https://github.com/coffinmusic)
    [![ALPHA](https://github-stats-alpha.vercel.app/api?username=Destroyerofworldd "DESTROYER")](https://github-stats-alpha.vercel.app/api?username=Destroyerofworldd "DESTROYER")
 
+<h2> <img src="https://github.com/Destroyerofworldd/Coffinmusic/blob/main/cat_gif.gif" width="90px"> DESTROYER 🌿 <img src = "https://github.com/Destroyerofworldd/Coffinmusic/blob/main/cat1.gif" width="90px"> </h1>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 GO TO [RELOAD.PY](https://github.com/Destroyerofworldd/coffinmusic/blob/main/coffinMusic/plugins/tools/reload.py) THEN CHANGE MY ID NUMBER 
 
