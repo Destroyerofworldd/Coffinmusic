@@ -8,13 +8,13 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
-from VILLAIN_MUSIC.utils.database import is_on_off
-from VILLAIN_MUSIC import app
-from VILLAIN_MUSIC.utils.formatters import time_to_seconds
+from AloneMusic.utils.database import is_on_off
+from AloneMusic import app
+from AloneMusic.utils.formatters import time_to_seconds
 import random
 import logging
 import aiohttp
-from VILLAIN_MUSIC import LOGGER
+from AloneMusic import LOGGER
 from urllib.parse import urlparse
 from config import API_URL, VIDEO_API_URL, API_KEY
 
