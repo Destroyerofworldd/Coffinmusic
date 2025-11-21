@@ -16,6 +16,7 @@ import random
 import logging
 import aiohttp
 import config
+from py_yt import VideosSearch
 from config import API_URL, API_KEY
 
 
